@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static files</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 2rem 1rem;
+            background: Canvas;
+            color: CanvasText;
+        }
+
+        main {
+            width: min(100%, 48rem);
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+            border: 1px solid color-mix(in srgb, CanvasText 20%, transparent);
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+
+        li + li {
+            border-top: 1px solid color-mix(in srgb, CanvasText 20%, transparent);
+        }
+
+        a {
+            display: block;
+            padding: 0.85rem 1rem;
+            color: LinkText;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus-visible {
+            background: color-mix(in srgb, LinkText 10%, Canvas);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Static files</h1>
+        <p>Files available in this directory:</p>
+        <ul>
+            <li><a href="/face.glb">face.glb</a></li>
+            <li><a href="/ga3-q6-zami0c.glb">ga3-q6-zami0c.glb</a></li>
+            <li><a href="/ga3-q7-morph-face-pair.mp4">ga3-q7-morph-face-pair.mp4</a></li>
+        </ul>
+    </main>
+</body>
+</html>
